@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Series</a>
+                <a href="#">Movies</a>
+                <a href="#">MyList</a>   
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <!-- <a href="#" class="signup-btn">Sign Up</a> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Watch the Best Movies and Series</h1>
+                <button>Click to Watch</button>
+            </div>
+        </section>
+        <section class="movies-section">
+            <h2>Popular Movies</h2>
+            <div class="movies-container" id="moviesContainer">
+                <!-- Movie items will be added here -->
+            </div>
+        </section>
+        <section class="movies-section">
+            <h2>Popular Series</h2>
+            <div class="movies-container" id="seriesContainer">
+                <!-- Movie items will be added here -->
+            </div>
+        </section>
+        <section class="movies-section">
+            <h2>Kids and Family TV</h2>
+            <div class="movies-container" id="CartoonContainer">
+                <!-- Movie items will be added here -->
+            </div>
+        </section>
+        <section class="trailer-section" id="trailerSection">
+            <button onclick="closeTrailer()" class="close-btn">X</button>
+            <video id="trailerVideo" controls></video>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Netflix Clone</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+    <script src="cartoon.js"></script>
+</body>
+</html>

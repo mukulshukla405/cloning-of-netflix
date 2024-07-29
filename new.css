@@ -1,0 +1,191 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    line-height: 1.6; /* Added for better readability */
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 120px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+/* Add this to your new.css file */
+
+header .auth-buttons {
+    margin-left: auto; /* Push the buttons to the right */
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: rgba(239, 22, 22, 0.968); /* Semi-transparent black background */
+}
+
+
+.login-btn:hover {
+    background-color: rgba(109, 12, 12, 0.8); /* Darker black on hover */
+}
+
+.banner {
+    background: url('background.png') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #7c1016;
+}
+
+.movies-section {
+    padding: 20px;
+}
+
+.movies-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Added styles for the container */
+.movies-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px; /* Added padding to prevent content cut-off */
+    scroll-behavior: smooth; /* Smooth scrolling for horizontal scroll */
+}
+
+/* Style for movie items */
+.movie-item {
+    width: 200px; /* Adjust the width to fit your design */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    cursor: pointer;
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+.movie-item img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+.movie-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Add hover effect for movie items */
+.movie-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+}
+
+.trailer-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.trailer-section video {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #b81d24;
+}
+
+footer {
+    background-color: #df0f0fc7;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
